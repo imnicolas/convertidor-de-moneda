@@ -8,15 +8,10 @@ import java.util.*;
 
 
 public class Conversor {
+    public Conversor() {
+    }
 
-            /*
-            private static final Map<String, BigDecimal> listaMonedas = new HashMap<String,BigDecimal>(){
-                {
-                    put("dolar", new BigDecimal("303"));
-                }
-            };
-            */
-
+    // Converter money from $ to USD, YEN, EU, etc...
             public static BigDecimal convertir(BigDecimal monto, String tipoDeMoneda) {
                 BigDecimal resultado = new BigDecimal(0);
                 if (tipoDeMoneda == "dolar") {
@@ -37,6 +32,7 @@ public class Conversor {
                 return resultado;
             };
 
+            // Converter temperature
             public static double convertirTemp(double valor, String temperaturas){
                 double resultadoTemp =0 ;
               if (temperaturas == "kelvin"){
@@ -50,8 +46,6 @@ public class Conversor {
                 }
                 return resultadoTemp;
             };
-
-
 
 
             public static void main(String[] args) {
